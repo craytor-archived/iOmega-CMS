@@ -11,21 +11,21 @@ if(isset($_POST['login'])) {
 			if(md5($_POST['password']) == $user['Password']) {
 				echo "Login successful";
 				$_SESSION['user'] = $user['Username'];
-				header("Location: ../index.php");
+				header("Location: index.php");
 			} else {
 				echo "Please check your login details!";
-				include('../login.php');
+				include('login.php');
 			}
 		} else {
 			echo "Please check your password!";
-			include('../login.php');
+			include('login.php');
 		}
 	} else {
 		echo "Please check your username!";
-		include('../login.php');
+		include('login.php');
 	}
 } else {
 	echo "Please check that you filled out the login form!";
-	include('../login.php');
+	include('login.php');
 }
 ?>
