@@ -1,5 +1,5 @@
 <?php
-	include('includes/connect.php');
+	include('inc/connect.php');
 	
 	function getPosts() {
 		$query = mysql_query("SELECT * FROM posts") or die (mysql_error());
