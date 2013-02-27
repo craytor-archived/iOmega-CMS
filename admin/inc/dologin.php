@@ -1,6 +1,6 @@
 <?php
 ob_start();
-include('../includes/functions.php');
+include('inc/functions.php');
 session_start();
 if(isset($_POST['login'])) {
 	if(isset($_POST['username'])) {

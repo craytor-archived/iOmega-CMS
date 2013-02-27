@@ -1,5 +1,5 @@
 <?php
-include('../includes/functions.php');
+include('inc/functions.php');
 if(isset($_POST['submit'])) {
 	if(isset($_POST['CatName'])) {
 		editCat($_POST['CatName'],$_POST['CatDesc'],$_POST['id']);
